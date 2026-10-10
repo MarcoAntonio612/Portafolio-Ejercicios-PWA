@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; --navy:#12304A; --blue:#1F6FEB; --pale:#F4F8FC; --text:#172B3A; --muted:#5D6B78; }
+body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--text); background:var(--pale); line-height:1.5; }
+header { background:var(--navy); color:white; padding:1rem clamp(1rem,4vw,3rem); }
+.topbar { max-width:1100px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+.brand { display:flex; align-items:center; gap:.75rem; font-size:1.2rem; font-weight:700; }
+.brand-mark { display:grid; place-items:center; width:42px; height:42px; border-radius:12px; color:var(--navy); background:white; font-weight:800; }
+nav { display:flex; gap:.5rem; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; padding:.55rem .8rem; border-radius:8px; }
+nav a:hover, nav a:focus { background:#284B66; outline-offset:3px; }
+main { max-width:1100px; margin:0 auto; padding:clamp(1rem,4vw,2.5rem); }
+.hero { background:white; border:1px solid #DCE5ED; border-radius:18px; padding:clamp(1.25rem,4vw,2.25rem); box-shadow:0 8px 24px #12304A0A; }
+.eyebrow { color:var(--blue); text-transform:uppercase; font-size:.78rem; letter-spacing:.09em; font-weight:700; }
+h1 { margin:.4rem 0 .75rem; font-size:clamp(1.8rem,4vw,2.8rem); line-height:1.15; }
+p { color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:1.25rem; }
+.card { background:white; border:1px solid #DCE5ED; border-radius:14px; padding:1.2rem; }
+.card h2 { font-size:1.1rem; margin:.2rem 0 .5rem; }
+.card p { margin:.25rem 0; }
+.pill { display:inline-block; border-radius:999px; background:#E8F1FF; color:#174EA6; padding:.25rem .65rem; font-size:.82rem; font-weight:700; }
+.status { margin-top:1rem; padding:1rem; border-radius:12px; background:#EAF7EF; border:1px solid #B9E5C8; color:#14532D; }
+button { border:0; border-radius:9px; background:var(--blue); color:white; padding:.75rem 1rem; font-weight:700; cursor:pointer; }
+button:hover { background:#174EA6; }
+footer { text-align:center; padding:1.5rem; color:var(--muted); font-size:.9rem; }
+code { background:#EDF2F7; padding:.1rem .3rem; border-radius:4px; }
+@media (max-width:760px) { .grid { grid-template-columns:1fr; } .topbar { align-items:flex-start; flex-direction:column; } nav { width:100%; } nav a { padding:.45rem .6rem; } }

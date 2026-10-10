@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12304A">
+  <meta name="description" content="Práctica de desarrollo de una Aplicación Web Progresiva.">
+  <title>Ejercicio 4 | Cache-First</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand"><span class="brand-mark">PWA</span><span>Mi PWA <small>· Portafolio</small></span></div>
+      <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#caracteristicas">Características</a><a href="#estado">Estado</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <span class="eyebrow">Ejercicio 4 de 5</span>
+      <h1>Ejercicio 4 | Cache-First</h1>
+      <p>La estrategia Cache-First busca primero los recursos guardados localmente.</p>
+      <span class="pill">HTML · CSS · JavaScript</span>
+    </section>
+    <section id="caracteristicas" class="grid" aria-label="Características">
+      <article class="card"><h2>Instalable</h2><p>El archivo manifest describe el nombre, los colores, el modo de visualización y los iconos de la aplicación.</p></article>
+      <article class="card"><h2>Responsiva</h2><p>La interfaz adapta sus tarjetas y navegación a pantallas de computadora, tableta y teléfono.</p></article>
+      <article class="card"><h2>Progresiva</h2><p>En los ejercicios siguientes se incorporan el Service Worker, la caché y la experiencia sin conexión.</p></article>
+    </section>
+    <section id="estado" class="status" aria-live="polite">
+      <strong>Estado de la práctica:</strong> La estrategia Cache-First busca primero los recursos guardados localmente.
+      <div id="sw-status">La comprobación de JavaScript aparecerá aquí.</div>
+    </section>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
